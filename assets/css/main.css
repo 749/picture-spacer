@@ -419,10 +419,57 @@ textarea {
 }
 
 
+/* Google Font imports*/
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
 
 /* Custom Styles*/
 
 body {
-  background-color: white;
+  font: Nunito, sans-serif 400;
+  background-color: #ccc;
   display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 640px;
+  margin: 50px 0 50px;
+}
+
+.wrapper h1 {
+  text-align: center;
+}
+
+.wrapper section {
+  background: #fff;
+  padding: 25px;
+  margin: 50px 0;
+  border-radius: 50px 50px;
+  overflow: hidden;
+}
+
+section.selector {
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
+}
+
+section.selector input, section.selector select {
+  padding: 15px 15px;
+}
+
+section.preview span {
+  display: block;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  margin: -25px -25px 0 -25px;
+}
+
+section.preview .image {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: columns;
+  justify-content: center;
 }
