@@ -27,6 +27,10 @@ if(preg_match_all("/^\/([0-9]+)[\/x]([0-9]+)(.(png|jpg|jpeg|gif))?/", $_SERVER['
       $filetype = TYPE_PNG;
       break;
   }
+  if($width * $height > 4000*4000) {
+    $width = 4000;
+    $height = 4000;
+  }
 }
 
 $image = @imagecreatetruecolor($width, $height)or die('Cannot Initialize new GD image stream');
