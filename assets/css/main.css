@@ -446,6 +446,8 @@ body {
   margin: 50px 0;
   border-radius: 50px 50px;
   overflow: hidden;
+  border: 2px solid #999;
+  box-shadow: 0px 3px 20px rgba(0,0,0,0.3);
 }
 
 section.selector {
