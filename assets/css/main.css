@@ -425,7 +425,8 @@ textarea {
 /* Custom Styles*/
 
 body {
-  font: Nunito, sans-serif 400;
+  font-family: Nunito, sans-serif;
+  font-weight: 400;
   background-color: #ccc;
   display: flex;
   justify-content: center;
@@ -475,4 +476,31 @@ section.preview .image {
   display: flex;
   flex-direction: columns;
   justify-content: center;
+}
+
+@media only screen and (max-width: 640px) {
+  body {
+    display: block;
+    padding: 20px 25px;
+  }
+  
+  .wrapper {
+    width: auto;
+  }
+  
+  section.selector {
+    display: block;
+    position: relative;
+  }
+  
+  section.selector input, section.selector select {
+    display: block;
+    width: calc(100% - 30px);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  section.preview span {
+    font-size: 0.6em;
+  }
 }
